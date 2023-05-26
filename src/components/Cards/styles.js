@@ -7,6 +7,7 @@ export const Container = styled.div`
   border-radius: 8px;
   background: ${({ theme }) => theme.COLORS.DARK_200};
   padding: 2.4rem;
+  position: relative;
 
   .icon {
     width: 100%;
@@ -17,11 +18,14 @@ export const Container = styled.div`
   }
 
   .favorite {
-    width: 100%;
+    /* width: 100%; */
     background: transparent;
     border: none;
     display: flex;
     justify-content: flex-end;
+
+    position: absolute;
+    right: 24px;
   }
 
   > button {
@@ -53,9 +57,15 @@ export const Container = styled.div`
         gap: 1.5rem;
 
         h1 {
-          font-size: 2.4rems;
+          font-size: 2.4rem;
           text-align: center;
           white-space: nowrap;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 160%;
         }
 
         h5 {
