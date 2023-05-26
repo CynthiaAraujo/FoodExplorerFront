@@ -18,7 +18,6 @@ export const Container = styled.div`
   }
 
   .favorite {
-    /* width: 100%; */
     background: transparent;
     border: none;
     display: flex;
@@ -43,8 +42,11 @@ export const Container = styled.div`
       > .imgPlate {
         display: flex;
         img {
-          max-width: 176px;
+          max-width: 17.6rem;
         }
+      }
+      .imgPlate.admin img {
+        margin-top: 3rem;
       }
       > button {
         background: transparent;

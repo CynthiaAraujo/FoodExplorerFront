@@ -52,7 +52,7 @@ export const Cards = forwardRef(
 
     const clickPlate = admin ? (
       <button
-        className="imgPlate"
+        className="imgPlate admin"
         onClick={() => handleViewPlate(plates)}
         type="button"
       >
