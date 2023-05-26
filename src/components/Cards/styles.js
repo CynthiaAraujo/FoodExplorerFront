@@ -41,6 +41,7 @@ export const Container = styled.div`
       gap: 1.5rem;
 
       > .imgPlate {
+        display: flex;
         img {
           max-width: 176px;
         }
@@ -60,12 +61,14 @@ export const Container = styled.div`
           font-size: 2.4rem;
           text-align: center;
           white-space: nowrap;
+          line-height: 140%;
         }
 
         p {
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 160%;
+          height: 44px;
         }
 
         h5 {
