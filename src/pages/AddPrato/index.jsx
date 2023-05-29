@@ -115,7 +115,7 @@ export function AddPrato() {
             </div>
 
             <div className="name">
-              <h5>Name</h5>
+              <h5>Nome</h5>
               <Input
                 title="Nome"
                 type="text"
