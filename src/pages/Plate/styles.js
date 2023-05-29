@@ -43,8 +43,7 @@ export const Form = styled.div`
     align-items: center;
 
     img {
-      width: 70%;
-      height: 70%;
+      max-width: 39rem;
     }
 
     .dishInformation {
@@ -118,7 +117,8 @@ export const Form = styled.div`
       flex-direction: column;
 
       img {
-        width: 80%;
+        width: 100%;
+        max-width: 26.4rem;
       }
 
       .dishInformation {
