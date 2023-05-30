@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Polygon from "../../assets/Polygon1.png";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { Loading } from "../../components/Loading";
 import { Container, Form, Logo } from "./styles";
 
 import { userAuth } from "../../hooks/auth";
@@ -11,13 +12,14 @@ import { userAuth } from "../../hooks/auth";
 export function SingIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const { singIn } = userAuth();
 
   function handleSingIn() {
     if (!password || !email) {
       return alert("Preencha todos os campos");
     }
-
+    setIsLoading(true);
     return singIn({ email, password });
   }
 
@@ -54,7 +56,9 @@ export function SingIn() {
           />
         </label>
 
-        <Button title="Entrar" onClick={handleSingIn} />
+        <Button onClick={handleSingIn} disabled={isLoading}>
+          {isLoading ? <Loading size={24} color="#fff" /> : "Entrar"}
+        </Button>
 
         <Link to="/register">Criar uma conta</Link>
       </Form>
