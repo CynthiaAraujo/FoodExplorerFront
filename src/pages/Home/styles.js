@@ -58,19 +58,19 @@ export const Form = styled.div`
     .ImageHome {
       margin-right: 50px;
       margin: 0;
-      height: 120px;
+      height: 12rem;
       padding: 0;
-      margin-top: 15px;
+      margin-top: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .imageHeader {
         position: static;
-        width: 191px;
-        height: 149px;
-        top: -25px;
-        right: 215px;
+        width: 19.1rem;
+        height: 14.9rem;
+        top: -2.5rem;
+        right: 21.5rem;
       }
 
       .description {
@@ -87,6 +87,24 @@ export const Form = styled.div`
           line-height: 140%;
         }
       }
+    }
+  }
+
+  @media (max-width: 514px) {
+    .ImageHome {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .imageHeader {
+      width: 65.6rem;
+      top: -2rem;
+      right: 21.5rem;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 `;
