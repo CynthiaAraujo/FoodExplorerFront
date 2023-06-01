@@ -12,24 +12,30 @@ export const Container = styled.div`
 export const Form = styled.div`
   padding: 2.6rem 12.4rem 0;
   width: 100%;
-  max-width: 1368px;
+  max-width: 136.8rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_400};
 
   > .ImageHome {
     width: 100%;
+
     position: relative;
-    margin-top: 166px;
+    margin-top: 16.6rem;
     background: ${({ theme }) => theme.COLORS.GRADIENTS_200};
-    border-radius: 8px;
-    height: 260px;
-    padding: 100px;
+    border-radius: 0.8rem;
+    height: 26rem;
+    padding: 10rem;
 
     > .description {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: last baseline;
+      position: absolute;
+      width: 50%;
+      min-width: 42.2rem;
+      right: 10rem;
+      top: 8.9rem;
 
       h1 {
         font-size: 4rem;
@@ -42,40 +48,41 @@ export const Form = styled.div`
     }
     .imageHeader {
       position: absolute;
-      max-width: 632px;
-
-      right: 552px;
-      top: -112px;
+      max-width: 63.2rem;
+      left: -7rem;
+      bottom: -1.4rem;
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1350px) {
     padding: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .ImageHome {
-      margin-right: 50px;
-      margin: 0;
+      margin: 10% 0 0;
       height: 12rem;
       padding: 0;
-      margin-top: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .imageHeader {
-        position: static;
-        width: 19.1rem;
-        height: 14.9rem;
-        top: -2.5rem;
-        right: 21.5rem;
+        width: 50%;
+        min-width: 19.1rem;
+        height: auto;
+        min-height: 14.9rem;
+        overflow: visible;
+        bottom: 0;
       }
 
       .description {
-        width: 215px;
         padding: 0;
+        right: 2.1rem;
+        top: 3.6rem;
+        min-width: 20.2rem;
+
         h1 {
           font-size: 1.8rem;
           white-space: nowrap;
@@ -87,24 +94,6 @@ export const Form = styled.div`
           line-height: 140%;
         }
       }
-    }
-  }
-
-  @media (max-width: 514px) {
-    .ImageHome {
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .imageHeader {
-      width: 65.6rem;
-      top: -2rem;
-      right: 21.5rem;
-    }
-
-    .description {
-      text-align: center;
-      margin-bottom: 20px;
     }
   }
 `;
