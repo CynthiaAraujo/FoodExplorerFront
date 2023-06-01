@@ -54,7 +54,7 @@ export const Form = styled.div`
     }
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1300px) {
     padding: 10%;
     display: flex;
     flex-direction: column;
